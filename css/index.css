@@ -107,10 +107,6 @@ section {
 body {
   line-height: 1;
 }
-ol,
-ul {
-  list-style: none;
-}
 blockquote,
 q {
   quotes: none;
@@ -145,10 +141,11 @@ body .container {
   border: solid #666;
   border-width: 8px 0 2px 0;
 }
-body .container #nav .links {
+body .container #nav .links li a {
   display: flex;
   justify-content: space-between;
   padding-bottom: 2%;
+  text-decoration: none;
 }
 body h1 {
   font-size: 48px;
@@ -160,6 +157,10 @@ body h1 h2 {
 }
 body h1 h2 h3 {
   font-size: 122%;
+}
+body .mainSkillsList {
+  padding-left: 2%;
+  column-count: 2;
 }
 body #footer {
   padding: 1em 0 5em 0;
