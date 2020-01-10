@@ -132,43 +132,82 @@ body {
 }
 body {
   font-family: Georgia;
-  color: #444;
+  color: black;
 }
 body .container {
   padding: 10px 80px;
   margin: 80px auto;
-  background: #f5f5f5;
+  background: #d2b48c;
   border: solid #666;
   border-width: 8px 0 2px 0;
 }
-body .container #nav .links li a {
+@media (max-width: 500px) {
+  body .container {
+    width: 90%;
+    padding: 20px;
+    flex-direction: column;
+  }
+}
+header nav {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 2%;
   text-decoration: none;
+  color: black;
 }
-body h1 {
+@media (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+h1 {
   font-size: 48px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+h2 {
+  font-size: 160%;
+}
+h3 {
+  font-size: 135%;
+}
+h3 header h2 .main {
+  font-size: 32px;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
-body h1 h2 {
-  font-size: 152%;
+a {
+  text-decoration: none;
+  color: black;
 }
-body h1 h2 h3 {
-  font-size: 122%;
-}
-body .mainSkillsList {
+.skillsList {
   padding-left: 2%;
+  padding-top: 2%;
   column-count: 2;
 }
-body #footer {
+@media (max-width: 500px) {
+  .skillsList {
+    column-count: 1;
+  }
+}
+.mainSkillsList {
+  display: block;
+  margin-bottom: 0.3rem;
+}
+p {
+  line-spacing: 2rem;
+}
+#footer {
   padding: 1em 0 5em 0;
   font-size: 92%;
   border-top: 1px solid #ccc;
   text-align: center;
 }
-body #footer p {
+#footer p {
   margin-bottom: 0;
   text-align: center;
 }
